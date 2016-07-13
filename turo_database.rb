@@ -77,7 +77,7 @@ class TuroDatabase
       when :get
         self.display_result(get(name)) if validate_operation(command, :required => {:name => name})
       when :numequalto
-        self.display_result(numequalto(name)) if validate_operation(command, :required => {:name => name})
+        self.display_result(num_equal_to(name)) if validate_operation(command, :required => {:name => name})
       when :begin
         self.begin
       when :rollback
